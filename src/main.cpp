@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-    Queue Q;
+    Queue Q(25);
 
     cout << "--Inserting the numbers 1-10 into the Queue--" << endl;
 

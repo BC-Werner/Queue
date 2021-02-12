@@ -35,7 +35,7 @@ bool Queue::isEmpty() {
 
 
 bool Queue::isFull() {
-    return (myQueue.size() >= 25);
+    return (myQueue.size() >= size);
 }
 
 

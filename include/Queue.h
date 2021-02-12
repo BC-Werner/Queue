@@ -2,12 +2,14 @@
 
 class Queue {
     private:
+        int size;
         // Linked List ? Array ?
         std::vector <int> myQueue;
 
 
+
     public:
-        Queue() {};
+        Queue(int size) : size(size) {};
 
         void enQueue(int value);
         int deQueue();
