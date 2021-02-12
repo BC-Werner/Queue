@@ -24,7 +24,6 @@ int Queue::deQueue() {
 
     myQueue.erase(myQueue.begin());
     
-    cout << endl << "Deleted: " << value << " from Queue" << endl;
     return value;
 }
 

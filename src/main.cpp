@@ -17,9 +17,13 @@ int main() {
     cout << "\n--Printing the Queue--" << endl;
     Q.printQueue();
 
-    cout << "\n--De-Queueing--" << endl;
+    cout << "\n--De-Queueing 4 times--\n" << endl;
+    Q.deQueue();
+    Q.deQueue();
+    Q.deQueue();
     Q.deQueue();
 
+    cout << "The first value in the Queue is now : {- " << Q.peek() << " -}" << endl;
 
     cout << "\n--Printing the Queue--" << endl;
     Q.printQueue();
