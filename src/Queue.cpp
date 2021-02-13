@@ -34,7 +34,7 @@ bool Queue::isEmpty() {
 
 
 bool Queue::isFull() {
-    return (myQueue.size() >= m_max());
+    return (myQueue.size() >= max());
 }
 
 
@@ -44,12 +44,11 @@ int Queue::peek() {
     return *myQueue.begin();
 }
 
-int Queue::m_size() {
-    // return this->size;
+int Queue::size() {
     return myQueue.size();
 }
 
-int Queue::m_max() {
+int Queue::max() {
     return myQueue.capacity();
 }
 

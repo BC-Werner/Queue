@@ -8,7 +8,7 @@ int main() {
     Queue Q(25);
 
     cout << "--Filling the Queue--" << endl;
-    for ( int i = 0; i < Q.m_max(); i++) {
+    for ( int i = 0; i < Q.max(); i++) {
         if (Q.isFull()) break;
         Q.enQueue(i);
     }
@@ -36,8 +36,8 @@ int main() {
     Q.deQueue();
 
     Q.printQueue();
-    cout << "\nThe size of the Queue is : " << Q.m_size() << endl;
-    cout << "The max_size of the Queue is : " << Q.m_max() << endl;
+    cout << "\nThe size of the Queue is : " << Q.size() << endl;
+    cout << "The max_size of the Queue is : " << Q.max() << endl;
 
 
     return 0;

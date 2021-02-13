@@ -15,8 +15,8 @@ class Queue {
         bool isEmpty();
         bool isFull();
         int peek();
-        int m_size();
-        int m_max();
+        int size();
+        int max();
         
         void printQueue();
 };
