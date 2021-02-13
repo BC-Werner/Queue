@@ -9,7 +9,7 @@ void Queue::enQueue(int value) {
         return;
     }
 
-    myQueue.push_back(value);
+    myQueue.emplace_back(value);
 }
 
 
@@ -34,7 +34,7 @@ bool Queue::isEmpty() {
 
 
 bool Queue::isFull() {
-    return (myQueue.size() >= this->max);
+    return (myQueue.size() >= m_max());
 }
 
 
@@ -50,7 +50,7 @@ int Queue::m_size() {
 }
 
 int Queue::m_max() {
-    return this->max;
+    return myQueue.capacity();
 }
 
 

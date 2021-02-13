@@ -3,14 +3,13 @@
 class Queue {
     private:
         int size { 0 };
-        int max;
-        // Linked List ? Array ?
         std::vector <int> myQueue;
 
 
-
     public:
-        Queue(int max) : max(max) {};
+        Queue(int max) {
+            myQueue.reserve(max); 
+        };
 
         void enQueue(int value);
         int deQueue();
