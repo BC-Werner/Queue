@@ -2,7 +2,6 @@
 
 class Queue {
     private:
-        int size { 0 };
         std::vector <int> myQueue;
 
 
