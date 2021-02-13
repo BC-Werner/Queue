@@ -5,7 +5,7 @@ using namespace std;
 
 void Queue::enQueue(int value) {
     if (this->isFull()) {
-        cout << "Queue is Full" << endl;
+        cout << "{- Queue is Full -}" << endl;
         return;
     }
 
@@ -16,7 +16,7 @@ void Queue::enQueue(int value) {
 int Queue::deQueue() {
     int value;
     if (this->isEmpty()) {
-        cout << "Queue is empty" << endl;
+        cout << "{- Queue is empty -}" << endl;
         return -1;
     }
 
@@ -29,12 +29,12 @@ int Queue::deQueue() {
 
 
 bool Queue::isEmpty() {
-    return (myQueue.size() < 0);
+    return (myQueue.size() <= 0);
 }
 
 
 bool Queue::isFull() {
-    return (myQueue.size() >= size);
+    return (myQueue.size() >= this->max);
 }
 
 
@@ -44,11 +44,20 @@ int Queue::peek() {
     return *myQueue.begin();
 }
 
+int Queue::m_size() {
+    // return this->size;
+    return myQueue.size();
+}
+
+int Queue::m_max() {
+    return this->max;
+}
+
 
 
 void Queue::printQueue() {
     if (this->isEmpty()) {
-        cout << endl << "Queue is empty" << endl;
+        cout << endl << "{- Queue is empty -}" << endl;
         return;
     }
 

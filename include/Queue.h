@@ -2,20 +2,23 @@
 
 class Queue {
     private:
-        int size;
+        int size { 0 };
+        int max;
         // Linked List ? Array ?
         std::vector <int> myQueue;
 
 
 
     public:
-        Queue(int size) : size(size) {};
+        Queue(int max) : max(max) {};
 
         void enQueue(int value);
         int deQueue();
         bool isEmpty();
         bool isFull();
         int peek();
+        int m_size();
+        int m_max();
         
         void printQueue();
 };
